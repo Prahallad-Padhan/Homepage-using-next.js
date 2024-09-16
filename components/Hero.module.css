@@ -1,0 +1,96 @@
+.hero {
+  padding: 50px;
+  background-color: #1E1E1E; /* Dark background for the hero section */
+  text-align: center;
+}
+
+.searchWrapper {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded corners */
+  font-size: 16px;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.contentSections {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center align sections */
+  margin-top: 30px;
+}
+
+.section {
+  width: 80%; /* Adjust width as needed */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #7862F8; /* Border color */
+  border-radius: 20px; /* Rounded corners for the sections */
+  padding: 30px;
+  margin-bottom: 40px; /* Space between sections */
+  display: flex; /* Use flexbox to arrange cards side by side */
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+}
+
+.card {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  border: none; /* No border for cards */
+  border-radius: 20px; /* Rounded corners */
+  background-color: #4E515C; /* Card background color */
+  flex: 1 1 calc(25% - 20px); /* Allow cards to grow equally, 4 cards per row with space */
+  margin: 10px; /* Space between cards */
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color */
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
+
+.cardImage {
+  width: 50px; /* Image width */
+  height: 50px; /* Image height */
+  border-radius: 20px; /* Rounded corners for the image */
+  margin-right: 15px; /* Space between image and heading */
+}
+
+.cardHeading {
+  font-size: 14px; /* Font size for the heading */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  background-color: #6A6D77; /* Change background on hover */
+}
